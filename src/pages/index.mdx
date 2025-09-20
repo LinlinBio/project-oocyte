@@ -23,9 +23,9 @@ import transformer from "../assets/transformer.webp";
 import Splat from "../components/Splat.tsx"
 import dogsDiffc from "../assets/dogs-diffc.png"
 import dogsTrue from "../assets/dogs-true.png"
-import oocyte-method from "../assets/oocyte-method.png"
-import oocyte-1 from "../assets/oocyte-1.png"
-import oocyte-2 from "../assets/oocyte-2.png"
+import oocyte_method from "../assets/oocyte-method.png"
+import oocyte_1 from "../assets/oocyte-1.png"
+import oocyte_2 from "../assets/oocyte-2.png"
 
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -72,7 +72,20 @@ However, mouse oocyte meiosis relies on a centrosome-independent mechanism of sp
 GV-stage mouse oocytes were isolated and treated with gradient concentrations of CCB02 (0 mM, 2.5 mM, 5 mM, and 10 mM) for 7 h, followed by fixation, immunofluorescence staining, and confocal microscopy imaging.
 
 <Figure>
-  <Image slot="figure" source={oocyte-method} altText="Isolation and quality inspection of GV-stage mouse oocytes." />
+  <Image slot="figure" source={oocyte_method} altText="Isolation and quality inspection of GV-stage mouse oocytes." />
   <span slot="caption">Isolation and quality inspection of GV-stage mouse oocytes.</span>
 </Figure>
 
+## Results
+
+Use the figure component to display images, videos, equations, or any other element, with an optional caption.
+
+<Figure>
+  <Image slot="figure" source={oocyte_1} altText="Diagram of the transformer deep learning architecture." />
+  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
+</Figure>
+
+<Figure>
+  <Image slot="figure" source={oocyte_2} altText="Diagram of the transformer deep learning architecture." />
+  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
+</Figure>
