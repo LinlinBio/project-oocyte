@@ -23,6 +23,9 @@ import transformer from "../assets/transformer.webp";
 import Splat from "../components/Splat.tsx"
 import dogsDiffc from "../assets/dogs-diffc.png"
 import dogsTrue from "../assets/dogs-true.png"
+import oocyte-method from "../assets/oocyte-method.png"
+import oocyte-1 from "../assets/oocyte-1.png"
+import oocyte-2 from "../assets/oocyte-2.png"
 
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -54,79 +57,35 @@ This is a live demo for a template you can use to create a simple project page f
 
 </HighlightedSection>
 
+<br>
+
 ## Introduction
 
 CCB02 was identified and optimized to selectively bind to the CPAP-binding site on tubulin, thereby competitively inhibiting the interaction between CPAP and tubulin, allowing CPAP to recruit greater amounts of its other interacting proteins, such as pericentriolar material (PCM), to interphase centrosomes. This disrupts normal centrosome clustering, activates the spindle assembly checkpoint (SAC), and ultimately prevents cell division.
+
 However, mouse oocyte meiosis relies on a centrosome-independent mechanism of spindle assembly, in which CPAP does not localize to the spindle. To better understand this process, we investigated the effect of CCB02 during mouse oocyte meiosis. Our results showed that mouse oocyte meiosis was inhibited by CCB02 in a dose-dependent manner, providing new insights into the regulation of spindle assembly during oogenesis.
 
-## Figures
+<br>
+
+## Methods
+
+GV-stage mouse oocytes were isolated and treated with gradient concentrations of CCB02 (0 mM, 2.5 mM, 5 mM, and 10 mM) for 7 h, followed by fixation, immunofluorescence staining, and confocal microscopy imaging.
+
+<Figure>
+  <Image slot="figure" source={oocyte-method} altText="Isolation and quality inspection of GV-stage mouse oocytes." />
+  <span slot="caption">Isolation and quality inspection of GV-stage mouse oocytes.</span>
+</Figure>
+
+## Results
 
 Use the figure component to display images, videos, equations, or any other element, with an optional caption.
 
 <Figure>
-  <Image slot="figure" source={transformer} altText="Diagram of the transformer deep learning architecture." />
+  <Image slot="figure" source={oocyte-1} altText="Diagram of the transformer deep learning architecture." />
   <span slot="caption">Diagram of the transformer deep learning architecture.</span>
 </Figure>
 
-## Image comparison slider
-
-An interactive, accessible slider component with keyboard navigation.
 <Figure>
-  <ImageComparison slot="figure" client:load imageUrlOne={dogsDiffc.src} imageUrlTwo={dogsTrue.src} altTextOne="Photo of two dogs running side-by-side in shallow water, lossily compressed using the DiffC algorithm" altTextTwo="Original photo of two dogs running side-by-side in shallow water" />
-  <span slot="caption">A photo of two dogs running side-by-side in shallow water, lossily compressed using the <a href="https://jeremyiv.github.io/diffc-project-page/">DiffC algorithm</a>.</span>
+  <Image slot="figure" source={oocyte-2} altText="Diagram of the transformer deep learning architecture." />
+  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
 </Figure>
-
-## Two columns
-
-Use the two columns component to display two columns of content. In this example, the first column contains a figure with a YouTube video and the second column contains a figure with a custom [React](https://react.dev/) component. By default, they display side by side, but if the screen is narrow enough (for example, on mobile), they're arranged vertically.
-
-<TwoColumns>
-  <Figure slot="left">
-    <YouTubeVideo slot="figure" videoId="wjZofJX0v4M" />
-    <span slot="caption">Take a look at this YouTube video.</span>
-  </Figure>
-  <Figure slot="right">
-    <Splat slot="figure" client:idle />
-    <span slot="caption">Now look at this <a href="https://en.wikipedia.org/wiki/Gaussian_splatting">Gaussian splat</a>, rendered with a React component.</span>
-  </Figure>
-</TwoColumns>
-
-## Heading levels
-
-Use headings to divide your content into sections.
-
-### Heading 3
-
-Go down a level to heading 3...
-
-#### Heading 4
-
-...and down again to heading 4.
-
-## LaTeX
-
-You can also add LaTeX formulas, rendered during the build process using [KaTeX](https://katex.org/) so they're quick to load for visitors of your project page. You can write them inline, like this: <LaTeX inline formula="a^2 + b^2 = c^2" />. Or, you can write them as a block:
-
-<LaTeX formula="\int_a^b f(x) dx" />
-
-## Tables
-
-You can add simple tables using [GitHub Flavored Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables):
-
-| Model | Accuracy | F1 score | Training time (hours) |
-| :--- | :---: | :---: | :---: |
-| BERT-base | 0.89 | 0.87 | 4.5 |
-| RoBERTa-large | 0.92 | 0.91 | 7.2 |
-| DistilBERT | 0.86 | 0.84 | 2.1 |
-| XLNet | 0.90 | 0.89 | 6.8 |
-
-## BibTeX citation
-
-```bibtex
-@misc{roman2024academic,
-  author = "{Roman Hauksson}",
-  title = "Academic Project Page Template",
-  year = "2024",
-  howpublished = "\url{https://research-template.roman.technology}",
-}
-```
