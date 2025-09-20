@@ -23,9 +23,6 @@ import transformer from "../assets/transformer.webp";
 import Splat from "../components/Splat.tsx"
 import dogsDiffc from "../assets/dogs-diffc.png"
 import dogsTrue from "../assets/dogs-true.png"
-import oocyte_method from "../assets/oocyte-method.png"
-import oocyte_1 from "../assets/oocyte-1.png"
-import oocyte_2 from "../assets/oocyte-2.png"
 
 
 import CodeBlock from "../components/CodeBlock.astro";
@@ -57,35 +54,28 @@ This is a live demo for a template you can use to create a simple project page f
 
 </HighlightedSection>
 
-<br>
-
 ## Introduction
 
 CCB02 was identified and optimized to selectively bind to the CPAP-binding site on tubulin, thereby competitively inhibiting the interaction between CPAP and tubulin, allowing CPAP to recruit greater amounts of its other interacting proteins, such as pericentriolar material (PCM), to interphase centrosomes. This disrupts normal centrosome clustering, activates the spindle assembly checkpoint (SAC), and ultimately prevents cell division.
 
 However, mouse oocyte meiosis relies on a centrosome-independent mechanism of spindle assembly, in which CPAP does not localize to the spindle. To better understand this process, we investigated the effect of CCB02 during mouse oocyte meiosis. Our results showed that mouse oocyte meiosis was inhibited by CCB02 in a dose-dependent manner, providing new insights into the regulation of spindle assembly during oogenesis.
 
-<br>
-
-## Methods
-
-GV-stage mouse oocytes were isolated and treated with gradient concentrations of CCB02 (0 mM, 2.5 mM, 5 mM, and 10 mM) for 7 h, followed by fixation, immunofluorescence staining, and confocal microscopy imaging.
-
-<Figure>
-  <Image slot="figure" source={oocyte_method} altText="Isolation and quality inspection of GV-stage mouse oocytes." />
-  <span slot="caption">Isolation and quality inspection of GV-stage mouse oocytes.</span>
-</Figure>
-
-## Results
+## Figures
 
 Use the figure component to display images, videos, equations, or any other element, with an optional caption.
 
 <Figure>
-  <Image slot="figure" source={oocyte_1} altText="Diagram of the transformer deep learning architecture." />
+  <Image slot="figure" source={transformer} altText="Diagram of the transformer deep learning architecture." />
   <span slot="caption">Diagram of the transformer deep learning architecture.</span>
 </Figure>
 
-<Figure>
-  <Image slot="figure" source={oocyte_2} altText="Diagram of the transformer deep learning architecture." />
-  <span slot="caption">Diagram of the transformer deep learning architecture.</span>
-</Figure>
+## BibTeX citation
+
+```bibtex
+@misc{roman2024academic,
+  author = "{Roman Hauksson}",
+  title = "Academic Project Page Template",
+  year = "2024",
+  howpublished = "\url{https://research-template.roman.technology}",
+}
+```
