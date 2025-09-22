@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: CCB02 Inhibits Mouse Oocyte Meiosis
+title: Inhibition of Meiotic Progression in Mouse Oocytes by CCB02
 description: Simple project page template for your research paper, built with Astro and Tailwind CSS
 favicon: favicon.svg
 thumbnail: screenshot-light.png
@@ -27,10 +27,10 @@ import oocyte_method from "../assets/oocyte-method.png"
 import oocyte_1 from "../assets/oocyte-1.png"
 import oocyte_2 from "../assets/oocyte-2.png"
 
-
 import CodeBlock from "../components/CodeBlock.astro";
 import Table from "../components/Table.astro";
 export const components = {pre: CodeBlock, table: Table}
+
 
 <Header
   title={frontmatter.title}
@@ -65,9 +65,13 @@ export const components = {pre: CodeBlock, table: Table}
 
 <section class="text-justify">
   CCB02 was identified and optimized to selectively bind to the CPAP-binding site on tubulin, thereby competitively inhibiting the interaction between CPAP and tubulin, allowing CPAP to recruit greater amounts of its other interacting proteins, such as pericentriolar material (PCM), to interphase centrosomes. This disrupts normal centrosome clustering, activates the spindle assembly checkpoint (SAC), and ultimately prevents cell division.
-
-  However, mouse oocyte meiosis relies on a centrosome-independent mechanism of spindle assembly, in which CPAP does not localize to the spindle. To better understand this process, we investigated the effect of CCB02 during mouse oocyte meiosis. Our results showed that mouse oocyte meiosis was inhibited by CCB02 in a dose-dependent manner, providing new insights into the regulation of spindle assembly during oogenesis.
+  <p class="mt-4">
+    However, mouse oocyte meiosis relies on a centrosome-independent mechanism of spindle assembly, in which CPAP does not localize to the spindle. To better understand this process, we investigated the effect of CCB02 during mouse oocyte meiosis. Our results showed that mouse oocyte meiosis was inhibited by CCB02 in a dose-dependent manner, providing new insights into the regulation of spindle assembly during oogenesis.
+  </p>
 </section>
+
+
+<HighlightedSection class="text-justify">
 
 ## Methods
 
@@ -80,10 +84,13 @@ export const components = {pre: CodeBlock, table: Table}
   <span slot="caption">Isolation and quality inspection of GV-stage mouse oocytes.</span>
 </Figure>
 
+</HighlightedSection>
+
+
 ## Results
 
 <section class="text-justify">
-Oocytes treated with a low concentration of CCB02 (2.5 mM) for 7 hours progressed to GVBD stage, whereas those treated with a high concentration (10 mM) remained at the GV stage; in both conditions, spindle assembly was defective.
+  Oocytes treated with a low concentration of CCB02 (2.5 mM) for 7 hours progressed to GVBD stage, whereas those treated with a high concentration (10 mM) remained at the GV stage; in both conditions, spindle assembly was defective.
 </section>
 
 <Figure>
